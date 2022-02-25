@@ -61,6 +61,57 @@ var count = 0
     $('.famitiki').toggleClass('famitiki_dance');
   })
 
+  // レジのscript
+  $(".submitBtn").on("click", function () {
+    let input = $("#keyword").val();
+    let data = {
+      "keyword":input,"apikey":"guest","format":"jsonp","max":1,"order":"r"
+    }
+    $.ajax({
+      url: "https://sysbird.jp/toriko/api/",
+      type: "get",
+      cache: false,
+      dataType: "jsonp",
+      data: data,
+    })
+    .done(function (response) {
+      //通信成功時の処理
+      console.log(response);
+      let maker=response.item.maker
+      let name=response.item.name
+      let price=response.item.price
+      let img=response.item.image
+      console.log(maker,name,img);
+      $(".result").children("img").attr("src",img);
+      $("#maker").text(maker);
+      $("#name").text(name);
+      $(".price").text(price);
+    })
+    .fail(function (xhr) {
+      //通信失敗時の処理
+      //失敗したときに実行したいスクリプトを記載
+    })
+    .always(function (xhr, msg) {
+      //通信完了時の処理
+      //結果に関わらず実行したいスクリプトを記載
+    })
+    $("#keyword").val("");
+    // 画像の表示・非表示処理
+    $(".first:nth-of-type(1)").fadeOut(1000);
+    $(".first:nth-of-type(2)").fadeIn(1000);
+  })
+  $("#good").on("click",function(){
+    $(".first:nth-of-type(2)").fadeOut(1000);
+    $(".first:nth-of-type(3)").fadeIn(1000);
+  })
+  $("#bad").on("click",function(){
+    $(".first:nth-of-type(2)").fadeOut(1000);
+    $(".first:nth-of-type(1)").fadeIn(1000);
+  })
+  $("#back").on("click",function(){
+    $(".first:nth-of-type(3)").fadeOut(1000);
+    $(".first:nth-of-type(1)").fadeIn(1000);
+  })
 // --------------------------------------------------------------------------------
 
     //     $(".submit-btn").on("click",function(){
