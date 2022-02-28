@@ -2,10 +2,11 @@ $(function(){
 
   // -------------------------------MIKU編集--------------------------------------------
 
-$(window).on('load',function(){
+  //LODING
+  $(window).on('load',function(){
   $("#loading").delay(1000).fadeOut('slow');
   $("#loading_logo").delay(1000).fadeOut('slow');
-});
+  });
 
   var count = 0
   $('.bad').on('click',function(){
@@ -65,7 +66,10 @@ $(window).on('load',function(){
     //感謝
     $('.thank').toggleClass('thank_pyon');
     $('.famitiki').toggleClass('famitiki_dance');
+
   })
+
+  // ----------------------------------------------------------------------
 
   // レジのscript
   $(".submitBtn").on("click", function () {
