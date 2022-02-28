@@ -1,21 +1,53 @@
 
+#loading{
+  width: 100%;
+  height: 100%;
+  background: rgb(233, 199, 7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center
+}
+
+#loading_logo{
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  margin:auto
+}
+
+.sake2{
+  height: 100px;
+  width: 100px;
+  animation: pyon 0.3s linear;
+  position: relative;
+}
+
+@keyframes pyon {
+  0% {top: 0}
+  50% {top:-17px}
+  100%{top: 0}
+}
+
 /*-----------------------header装飾---------------------------- */
 
 .header{
     width: 100%;
-    height: 15vh;
+    height: 18vh;
     display: flex;
     flex-direction: column;
 }
 
 .line{
     display: flex;
+    overflow: hidden;
 }
 
 .sake{
     height: 70px;
     width: 70px;
-    animation: ugoku-anime 8s linear infinite;
+    animation: ugoku-anime 8s linear infinite ;
 }
 
 @keyframes ugoku-anime {
@@ -23,8 +55,21 @@
         transform: translateX(0)rotate(0);
     }
 
-    100%  {
-        transform: translateX(1300px)rotate(360deg);
+    50%  {
+        transform: translateX(1300px);
+    }
+
+    100%{
+        transform: translateX(0)rotate(0);
+    }
+  }
+@keyframes anime {
+    0% {
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
     }
   }
 
@@ -50,6 +95,10 @@
     width: 100%;
     height: 3vh;
     background-color: rgb(50, 186, 240);
+}
+
+.line{
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------- */
@@ -227,7 +276,7 @@
 .nanako{
     height: 200px;
     width: auto;
-    transform: translateX(200px);
+    transform: translateX(100vw);
 
 }
 
@@ -236,6 +285,25 @@
     width: auto;
     transform: translateX(-1800px);
     transition: all 10s ease;
+}
+
+/* ------------------------------レスポンシブ対応------------------------------- */
+
+@media screen and (max-width: 790px){
+
+  .staff{
+    height: 200px;
+    width: 200px;
+    transform: translateY(900px) translateX(10%);
+}
+
+.staff_come{
+    height: 200px;
+    width: 200px;
+    transform: translateY(200px) translateX(10%);  
+    transition: all 2s ease;
+}
+  
 }
 
 /* ------------------------------仮-------------------------------------------- */

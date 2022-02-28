@@ -1,7 +1,13 @@
 $(function(){
 
   // -------------------------------MIKU編集--------------------------------------------
-var count = 0
+
+$(window).on('load',function(){
+  $("#loading").delay(1000).fadeOut('slow');
+  $("#loading_logo").delay(1000).fadeOut('slow');
+});
+
+  var count = 0
   $('.bad').on('click',function(){
 
     // count = count+1
