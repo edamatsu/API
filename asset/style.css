@@ -412,7 +412,7 @@ main{
 
     .first{
       width: 70%;
-      height: 39%;
+      height: 35vw;
     }
     .scr1{
       width: 89%;
@@ -433,7 +433,7 @@ main{
       font-size: 40%;
     }
     img{
-      height: 325px;
+      height: 100%;
     }
     .result{
       width: 40%;
