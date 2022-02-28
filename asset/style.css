@@ -291,7 +291,7 @@
 /* ------------------------------仮-------------------------------------------- */
 
 main{
-    height: 650px;
+    height: 100vh;
     width: 100vw;
     position: relative;
   }
@@ -415,10 +415,10 @@ main{
       height: 70%;
     }
     .scr1{
-      width: 90%;
+      width: 89%;
       left: 4%;
-      top: 36%;
-      height: 11%;
+      top: 31%;
+      height: 9%;
     }
     p{
       line-height: 1;
@@ -427,9 +427,9 @@ main{
       margin: 2%;
     }
     .display{
-      width: 51px;
-      height: 24px;
-      top: 19.8%;
+      width: 20%;
+      height: 3.2%;
+      top: 16.9%;
       font-size: 40%;
     }
     img{
@@ -445,5 +445,8 @@ main{
     }
     button{
       font-size: 40%;
+    }
+    input{
+      width: 68%;
     }
     }
