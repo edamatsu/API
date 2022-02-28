@@ -291,7 +291,7 @@
 /* ------------------------------仮-------------------------------------------- */
 
 main{
-    height: 50vh;
+    height: 90vh;
     width: 100vw;
     position: relative;
   }
@@ -315,8 +315,8 @@ main{
     /* display: none; */
   }
   .firstContent{
-    width: 650px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
   .img1{
@@ -324,13 +324,13 @@ main{
     height: auto;
   }
   .scr1{
-    width: 500px;
-    height: 100px;
+    width: 77%;
+    height: auto;
     background-color: white;
     border: 3px solid black;
     border-radius: 10px;
     position: absolute;
-    top: 81%;
+    top: 88%;
     left: 11%;
   }
   p{
@@ -338,15 +338,15 @@ main{
     margin-top: 16px;
   }
   .secondContent{
-    width: 650px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
   .result{
     position: absolute;
     top: 5%;
-    width: 200px;
-    height: 200px;
+    width: 35%;
+    height: 35%;
   }
   .result>img{
     width: 100%;
@@ -368,8 +368,8 @@ main{
     position: absolute;
     top: 49%;
     left: 9%;
-    width: 125px;
-    height: 60px;
+    width: 20%;
+    height: 9%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -412,13 +412,13 @@ main{
 
     .first{
       width: 70%;
-      height: 70%;
+      height: 39%;
     }
     .scr1{
       width: 89%;
       left: 4%;
-      top: 31%;
-      height: 9%;
+      top: 178%;
+      height: auto;
     }
     p{
       line-height: 1;
@@ -428,8 +428,8 @@ main{
     }
     .display{
       width: 20%;
-      height: 3.2%;
-      top: 16.9%;
+      height: 18.2%;
+      top: 99%;
       font-size: 40%;
     }
     img{
@@ -448,5 +448,8 @@ main{
     }
     input{
       width: 68%;
+    }
+    main{
+      height: 50vh;
     }
     }
