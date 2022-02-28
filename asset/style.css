@@ -287,38 +287,6 @@
     transition: all 10s ease;
 }
 
-/* ------------------------------レスポンシブ対応------------------------------- */
-
-@media screen and (max-width: 790px){
-
-  .staff{
-    height: 200px;
-    width: 200px;
-    transform: translateY(100vw) translateX(10%);
-}
-
-.staff_come{
-    height: 200px;
-    width: 200px;
-    transform: translateY(10%) translateX(10%);  
-    transition: all 2s ease;
-}
-
-#loading_logo{
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  margin:auto
-}
-
-.sake2{
-  height: 80px;
-  width: 80px;
-  animation: pyon 0.3s linear;
-  position: relative;
-}
-  
-}
 
 /* ------------------------------仮-------------------------------------------- */
 
@@ -414,20 +382,32 @@ main{
 
   @media screen and (max-width: 767px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .staff{
+      height: 200px;
+      width: 200px;
+      transform: translateY(100vw) translateX(10%);
+  }
+  
+  .staff_come{
+      height: 200px;
+      width: 200px;
+      transform: translateY(10%) translateX(10%);  
+      transition: all 2s ease;
+  }
+  
+  #loading_logo{
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    margin:auto
+  }
+  
+  .sake2{
+    height: 80px;
+    width: 80px;
+    animation: pyon 0.3s linear;
+    position: relative;
+  }
 
 
     .first{
