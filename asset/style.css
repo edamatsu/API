@@ -1,50 +1,47 @@
-/* 
-    #splash_logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
-    
-        #splash {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 999;
-            background-color: white;
-            text-align:center;
-            }
 
-/* .wrapper{
-    width:200px;
-    height:60px;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-} */
+#loading{
+  width: 100%;
+  height: 100%;
+  background: rgb(233, 199, 7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center
+}
 
-/* .circle{
-    width:100px;
-    height:100px;
-    position: absolute;
-    left:15%;
-    transform-origin: 50%;
-    animation: circle .5s alternate infinite ease;
-} */ */
+#loading_logo{
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  margin:auto
+}
 
-    
+.sake2{
+  height: 100px;
+  width: 100px;
+  animation: pyon 0.3s linear;
+  position: relative;
+}
+
+@keyframes pyon {
+  0% {top: 0}
+  50% {top:-17px}
+  100%{top: 0}
+}
+
 /*-----------------------header装飾---------------------------- */
 
 .header{
     width: 100%;
-    height: 15vh;
+    height: 18vh;
     display: flex;
     flex-direction: column;
 }
 
 .line{
     display: flex;
+    overflow: hidden;
 }
 
 .sake{
@@ -98,6 +95,10 @@
     width: 100%;
     height: 3vh;
     background-color: rgb(50, 186, 240);
+}
+
+.line{
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------- */
@@ -275,7 +276,7 @@
 .nanako{
     height: 200px;
     width: auto;
-    transform: translateX(200px);
+    transform: translateX(100vw);
 
 }
 
@@ -284,6 +285,25 @@
     width: auto;
     transform: translateX(-1800px);
     transition: all 10s ease;
+}
+
+/* ------------------------------レスポンシブ対応------------------------------- */
+
+@media screen and (max-width: 790px){
+
+  .staff{
+    height: 200px;
+    width: 200px;
+    transform: translateY(900px) translateX(10%);
+}
+
+.staff_come{
+    height: 200px;
+    width: 200px;
+    transform: translateY(200px) translateX(10%);  
+    transition: all 2s ease;
+}
+  
 }
 
 /* ------------------------------仮-------------------------------------------- */

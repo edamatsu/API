@@ -1,14 +1,11 @@
 $(function(){
 
   // -------------------------------MIKU編集--------------------------------------------
-    
-  
-  //loading
-    // $(window).on('load',function(){
-    // $("#splash").delay(1000).fadeOut('slow');
-    // $("#splash_logo").delay(1000).fadeOut('slow');
-    //  });
-    
+
+$(window).on('load',function(){
+  $("#loading").delay(1000).fadeOut('slow');
+  $("#loading_logo").delay(1000).fadeOut('slow');
+});
 
   var count = 0
   $('.bad').on('click',function(){
