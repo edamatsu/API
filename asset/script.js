@@ -1,7 +1,16 @@
 $(function(){
 
   // -------------------------------MIKU編集--------------------------------------------
-var count = 0
+    
+  
+  //loading
+    // $(window).on('load',function(){
+    // $("#splash").delay(1000).fadeOut('slow');
+    // $("#splash_logo").delay(1000).fadeOut('slow');
+    //  });
+    
+
+  var count = 0
   $('.bad').on('click',function(){
 
     // count = count+1
